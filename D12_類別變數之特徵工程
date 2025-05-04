@@ -6,3 +6,35 @@ Frequency Encoding：以某類別在該變數中出現的次數，作為該類�
 Feature Combination：將兩個或以上的類別變數交叉比對後，形成新的類別變數  
   優點：可考量到變數之間的交互作用。
   缺點：類別數過多容易導致特定類別的資料筆數過少。
+
+D12_HW：
+
+Label Encoding
+本次介紹以下兩種方法可進行 Label Encoding
+1. 使用 sklearn 套件中 LabelEncoder 函數
+2. 使用 Dictionary 資料型態的功能
+舉例：將 Destination 進行 Label Encoding
+
+One-Hot Encodig
+本次介紹以下兩種方法進行 One-Hot Encoding
+1. 使用 sklearn 套件中的 OneHotEncoder 函數
+2. 使用 Dictionary 資料型態的功能
+舉例：將 Destination 變數進行 One-Hot Encoding
+
+Ordinal Encoding
+本次介紹兩種方法進行 Ordinal Encoding
+1. 使用 sklearn 套件中的 LabelEncoder 函數且要自定義類別順序（比較不推薦）
+2. 使用 sklearn 套件中的 OrdinalEncoder 函數且要自定義類別順序（比較推薦）
+3. 使用 Dictionary 資料型態的功能
+
+Frequency Encoding
+本次主要使用 Dictionary 資料型態的功能實現 Frequency Encoding，步驟如下：
+1. 先計算各類別的數量
+2. 將計算結果轉換成 Dictionary 資料型態
+3. 進行類別轉換
+
+Feature Combination
+本次將介紹使用 Dictionary 資料型態的功能進行類別特徵的特徵合併，其步驟如下：
+1. 建構合併規則，並以 Dictionary 資料型態呈現
+2. 將類別變數作轉換
+舉例：Destination 與 VIP 兩個類別變數進行混合
