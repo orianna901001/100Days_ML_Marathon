@@ -1,0 +1,33 @@
+最外圍：Artificial Intelligence: 有能力像人類般學習與思考的程序。
+中間層：Machine Learning: 包含能夠學習的模型，通常這類模型是可以依據所給定的輸入給出預測的。
+最內圍：Deep Learning: 更強調以神經網路所搭建起來的這類模型。
+
+監督式學習：監督式學習的方法是會給定特徵以及要預測的目標（稱為標籤），我們希望輸入特徵給模型，經過模型的運算後，模型可以輸出預測的標籤。模型會根據給定的特徵及標籤之間的關係，來學習如何預測，並且從資料中學會兩者之間的關係性。
+1. Classification: 分類任務：
+  1. Fraud Detection: 詐欺偵測
+  2. Image Classification: 影像分類
+  3. Customer Retation: 客戶保留
+  4. Diagnostics: 診斷
+2. Regression: 迴歸任務
+  1. forecasting: 預測
+  2. prediction: 預測
+  3. process optimization: 流程優化
+  4. new insights: 新洞見
+
+ 強化學習：增強式學習，與前兩者方法不同的是，它每次只學一筆資料，並且立即給出一次預測。在一開始，模型會預測不準，但經過一段時間的訓練後，會學到如何給出預測的策略，並給出更為正確的預測。增強式學習是透過定義環境 (Environment)、代理機器人 (Agent) 及獎勵 (Reward)，讓機器人透過與環境的互動學習如何獲取最高的獎勵。
+  1. real-time decisions: 及時預測  
+  2. game AI: 遊戲AI
+  3. learning tasks: 任務學習
+  4. skill aquisition: 技能習得（正確英文為 skill acquirsition）
+  5. robot navigation: 機器人導航
+
+非監督式學習：非監督式學習的方法是只給定特徵，希望模型可以給出預測。值得注意的是，在非監督式學習中是沒有給模型標籤的，有可能是連我們都沒有正確答案。
+  1. Clustering: 分群
+    1.Recommended Systems: 推薦系統
+    2.Targetted Marketing: 目標市場
+    3.Customer Segmentation: 市場切割
+  2.Dimensionally Reduction: 維度減少
+    1.Feature Elicitation: 特徵提取
+    2.Structure Discovery: 結構發現
+    3.Meaningful Compression: 有意義的壓縮
+    4.Big Data Visualization: 大數據視覺化
