@@ -1,7 +1,8 @@
 監督式學習主要分為迴歸問題與分類問題。
 
 迴歸模型(LinearRegression)直接把它當作預測值，並用「平方誤差」來學習參數
-分類模型(LogisticRegression)先把它當作 log-odds，再經過「sigmoid/softmax」轉成機率0~1範圍，使用常用的損失函數是對數損失（log loss），也稱為二元交叉熵（binary cross-entropy）：
+分類模型(LogisticRegression)先把它當作 log-odds，再經過「sigmoid/softmax」轉成機率0~1範圍為定義function set，相當於model = LogisticRegression() 我的模型就是輸入 x 先算 wᵀx+b，再幫我套上 sigmoid，輸出介於 0 到 1 之間的機率
+使用常用的損失函數是對數損失（log loss），也稱為二元交叉熵（binary cross-entropy）為loss function：  
   二元分類（binary-class），顧名思義就是目標的類別僅有兩個。像是詐騙分析 (詐騙用戶 vs. 正常用戶)、瑕疵偵測 (瑕疵 vs. 正常)
   多元分類（multi-class）則是目標類別有兩種以上。如手寫數字辨識有 10 個類別 (0~9)，影像競賽 ImageNet 更是有高達 1,000 個類別需要分類
 
