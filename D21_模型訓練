@@ -1,2 +1,37 @@
 整個機器學習透過損失函數，可以評估這個模型對於資料的適合度（fitness）有多高，為了去提高適合度，利用了梯度下降法去調整模型參數，並降低損失函數的值。
 可以發現透過損失函數，將一個模型的學習問題轉化成了一個最佳化問題。
+
+f(x)通常稱為目標函數（target function），或稱為代價函數（cost function），是要藉由去調整變數x使f(x)最大化或最小化，目標函數是要用在最大化arg max的情況，而代價函數或損失函式(loss function)則是用在最小化arg min的情況。
+在最佳化問題中，有可能會對變數x有所限制，設定a為常數為沒有限制式的最佳化問題，稱為無約束最佳化（unconstrained optimization）；帶有限制式的則稱為約束最佳化（constrained optimization）。
+
+在機器學習中常遇到的問題是局部最佳解問題，我們想要求的是全局最佳解，因此歷史上有很多解法：
+1. 基因演算法（genetic algorithm）
+2. 模擬退火法（simulated annealing）
+3. 粒子群演算法（particle swarm algorithm）
+4. 蟻群演算法 (ant colony optimization)
+5. 蜂群演算法 (bee colony algorithm)
+
+鞍點（saddle point）：鞍點的區域附近會造成梯度的計算上會趨近於 0，，求到的解不是局部最佳解，也不是全局最佳解，可以使用帶有動量（momentum）的梯度方法。
+多目標最佳化問題：眾多的條件希望可以同時達到最佳，在線上的點都是最佳解，只是有不同的分配比例。
+凸函數最佳化：他的形狀是「凸」向下的，沒有其他的山丘之類的形狀。
+非凸函數最佳化問題：非凸函數最佳化問題（nonconvex optimization）仍然是一個學術上待解的問題，目前已經有非常多的方法提出，不過仍然缺乏一個系統性的解決方法。
+
+
+基於梯度的方法（gradient-based methods）
+  梯度下降法（Gradient descent method）
+  共軛梯度法（Conjugate gradient method）
+  Coordinate descent methods
+  ...
+基於 Hessians 的方法
+  Newton's method
+  Interior point methods
+  隨機方法（stochastic methods）
+馬可夫蒙地卡羅法（Markov chain Monte Carlo）
+  Metropolis-Hastings method
+  Hamiltonian Monte Carlo
+  Variational inference
+  Gibb's sampling
+  ...
+連續空間的方法（methods for continuous space）
+  變分法（Calculus of variations）
+  偏微分方程（Partial differential equations）
