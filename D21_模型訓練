@@ -35,3 +35,35 @@ f(x)通常稱為目標函數（target function），或稱為代價函數（cost
 連續空間的方法（methods for continuous space）
   變分法（Calculus of variations）
   偏微分方程（Partial differential equations）
+
+
+
+1. 對所有的v而言，v的轉置矩陣*H*v > 0 
+			→H為positive definite矩陣，其特性為eigenvalue都是正數
+			→只要觀察H的eigenvalue是不是全都正數，便可知道v的轉置矩陣*H*v是否>0
+			→Local minima
+	2. 對所有的v而言，v的轉置矩陣*H*v < 0 
+			→H為negative definite矩陣，其特性為eigenvalue都是負數
+			→只要觀察H的eigenvalue是不是全都負數，便可知道v的轉置矩陣*H*v是否<0
+			→Local maxima
+	3. 對所有的v而言，v的轉置矩陣*H*v有時>0有時<0
+			→只要觀察H的eigenvalue是不是有正有負
+			→Saddle point
+結論
+	只要算出Hessian這個矩陣，並且觀察其eigenvalue，便可知道現在的Critical point是什麼情況
+
+
+	把LF寫出來，L=(y_hat-w1w2x)^2=(1-w1w2)^2
+	現在來求，若w1w2都是0，此點是什麼情況？
+	求Gradient
+	Gradient有兩個式子，分別是
+		1.w1對L的偏微分
+		2.w2對L的偏微分
+	然後求Hessian，為一個2維矩陣，有四個式子，分別是
+		1.w1對L微兩次
+		2.w2微w1微
+		3.w1微w2微
+		4.w2微兩次
+	把(0,0)帶入Hessian，可得4個式子答案分別是0，-2，-2，0
+	再求eigenvalue，可發現其為2與-2
+	因此此點為saddle point
